@@ -47,7 +47,7 @@ if protocol == "twice":
             client_sock.send("error:404:member".encode())
     elif request_data == "weight":
         try:
-            client_sock.send(("weight:" + get_weight(member_name)).encode())
+            client_sock.send(("weight:" + member_name + ":" + get_weight(member_name)).encode())
         except AttributeError:
             client_sock.send("error:404:member".encode())
     else:
