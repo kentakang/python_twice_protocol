@@ -18,12 +18,15 @@ Height | 요청 한 멤버의 키
 
 ex) height:dahyun:158
 응답 형식은 response_type:member_name:response_data 의 형식입니다.
+
 Response Type | Description
 ------------- | -----------
 Height | 멤버의 키를 제공합니다.
 Weight | 멤버의 몸무게를 제공합니다.
-Error  | 오류입니다. 
+Error  | 오류입니다.
+
 오류가 발생할 경우 error:error_code:error_name 의 형식으로 응답합니다.
+
 Error Code | Error Name | Description
 -----------| -----------| -------------
 404 | protocol | 프로토콜이 twice 프로토콜이 아닐 시 발생하는 오류입니다.
